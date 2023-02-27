@@ -746,7 +746,7 @@ export default function Home() {
                 {`then 'Add to home screen'`}
               </div>
               <ArrowLongDownIcon
-                className="animate-bounce mt-4"
+                className="animate-bounce mt-4 text-white"
                 width={28}
                 height={28}
               />
