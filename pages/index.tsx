@@ -334,7 +334,7 @@ export default function Home() {
                   center: {
                     x: 50,
                     y: 50,
-                    mode: "percent",
+                    mode: percent,
                     radius: 0,
                   },
                   decay: 0,
