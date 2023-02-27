@@ -746,10 +746,6 @@ export default function Home() {
           </div>
         </>
       )}
-
-      {/* Rendering for Small Screen */}
-
-      {/* Rendering for standalone and mobile view */}
     </>
   );
 }
