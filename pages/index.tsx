@@ -697,7 +697,7 @@ export default function Home() {
             </h1>
             {/* QR Code */}
             <div className="border border-white rounded-lg p-4">
-              <QRCode value={deployed_url} size="200" />
+              <QRCode value={deployed_url} size={200} />
             </div>
 
             <h1
@@ -738,12 +738,12 @@ export default function Home() {
                   icon button below,
                 </h1>
               </div>
-              <h1
+              <div
                 className="font-mono font-bold text-sm
               "
               >
-                ${`then 'Add to home screen'`}
-              </h1>
+                {`then 'Add to home screen'`}
+              </div>
               <ArrowLongDownIcon
                 className="animate-bounce mt-4"
                 width={28}
