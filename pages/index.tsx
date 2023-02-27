@@ -33,7 +33,7 @@ export default function Home() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setIsStandalone(window.navigator.standalone || false);
+      setIsStandalone(window.navigator?.standalone || false);
     }
   }, []);
 
