@@ -339,7 +339,8 @@ export default function Home() {
                   center: {
                     x: 50,
                     y: 50,
-                    mode: SizeMode.percent,
+                    // @ts-ignore
+                    mode: "percent",
                     radius: 0,
                   },
                   decay: 0,
