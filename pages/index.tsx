@@ -735,7 +735,7 @@ export default function Home() {
                 className="font-mono font-bold text-sm
               "
               >
-                then 'Add to home screen'
+                ${`then 'Add to home screen'`}
               </h1>
               <ArrowLongDownIcon
                 className="animate-bounce mt-4"
