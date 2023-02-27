@@ -718,7 +718,7 @@ export default function Home() {
               You are just two taps away.
             </h1>
 
-            <div className="flex flex-col gap-4 absolute bottom-10 items-center justify-center">
+            <div className="flex flex-col gap-4 absolute bottom-28 items-center justify-center">
               <div className="flex justify-center items-center">
                 <h1
                   className="text-white font-mono font-bold text-sm
