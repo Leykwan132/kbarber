@@ -32,8 +32,8 @@ export default function Home() {
   );
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setIsStandalone(window.navigator?.standalone || false);
+    if (typeof window !== "undefined" && window.navigator.standalone) {
+      setIsStandalone(window?.navigator?.standalone || false);
     }
   }, []);
 
