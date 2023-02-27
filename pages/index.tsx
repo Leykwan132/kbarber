@@ -23,7 +23,7 @@ export default function Home() {
     precise = "precise",
     percent = "percent",
   }
-  const deployed_url = "https://github.com/Leykwan132/kbarber";
+  const deployed_url = "https://kbarber.vercel.app/";
   const [isStandalone, setIsStandalone] = useState(false);
   const particlesInit = useCallback(async (engine: any) => {
     console.log(engine);
