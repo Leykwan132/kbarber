@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import { useCallback, useEffect, useState } from "react";
 import QRCode from "react-qr-code";
 import { loadFull } from "tsparticles";
@@ -10,13 +8,14 @@ import {
   ArrowUpOnSquareIcon,
   ArrowLongDownIcon,
 } from "@heroicons/react/24/outline";
+import { Container } from "react-dom";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const deployed_url = "https://github.com/Leykwan132/kbarber";
   const [isStandalone, setIsStandalone] = useState(false);
-  const particlesInit = useCallback(async (engine: Engine) => {
+  const particlesInit = useCallback(async (engine: any) => {
     console.log(engine);
 
     // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
