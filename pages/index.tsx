@@ -8,7 +8,6 @@ import {
   ArrowUpOnSquareIcon,
   ArrowLongDownIcon,
 } from "@heroicons/react/24/outline";
-import { Container } from "react-dom";
 
 const inter = Inter({ subsets: ["latin"] });
 declare global {
@@ -30,12 +29,9 @@ export default function Home() {
     await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(
-    async (container: Container | undefined) => {
-      await console.log(container);
-    },
-    []
-  );
+  const particlesLoaded = useCallback(async (container: any | undefined) => {
+    await console.log(container);
+  }, []);
 
   useEffect(() => {
     if (typeof window !== "undefined" && window.navigator.standalone) {
