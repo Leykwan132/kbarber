@@ -692,7 +692,7 @@ export default function Home() {
             }}
           />
           <div className="hidden h-screen md:flex flex-col gap-10 justify-center items-center ">
-            <h1 className="font-bold font-mono text-3xl">
+            <h1 className="text-white font-bold font-mono text-3xl">
               KwanBarber is on Mobile now!
             </h1>
             {/* QR Code */}
@@ -701,17 +701,18 @@ export default function Home() {
             </div>
 
             <h1
-              className="font-mono font-thin text-sm
+              className="text-white font-mono font-thin text-sm
             "
             >
               Scan this QR Code with your Iphone to access the experience.
             </h1>
           </div>
           <div className="relative px-6 flex h-screen md:hidden flex-col gap-10 justify-center items-center text-center">
-            <h1 className="font-bold font-mono text-3xl">KwanBarber</h1>
-            {/* QR Code */}
+            <h1 className="text-white font-bold font-mono text-3xl">
+              KwanBarber
+            </h1>
             <h1
-              className="font-mono font-thin
+              className="text-white font-mono font-thin
             "
             >
               You are just two taps away.
@@ -720,7 +721,7 @@ export default function Home() {
             <div className="flex flex-col gap-4 absolute bottom-10 items-center justify-center">
               <div className="flex justify-center items-center">
                 <h1
-                  className="font-mono font-bold text-sm
+                  className="text-white font-mono font-bold text-sm
                 "
                 >
                   Tap the
@@ -732,14 +733,14 @@ export default function Home() {
                   height={32}
                 />
                 <h1
-                  className="font-mono font-bold text-sm
+                  className="text-white font-mono font-bold text-sm
                 "
                 >
                   icon button below,
                 </h1>
               </div>
               <div
-                className="font-mono font-bold text-sm
+                className="text-white font-mono font-bold text-sm
               "
               >
                 {`then 'Add to home screen'`}
