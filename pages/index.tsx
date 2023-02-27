@@ -15,9 +15,14 @@ declare global {
     // ⚠️ notice that "Window" is capitalized here
     standalone: any;
   }
+  interface SizeMode {}
 }
 
 export default function Home() {
+  const enum SizeMode {
+    precise = "precise",
+    percent = "percent",
+  }
   const deployed_url = "https://github.com/Leykwan132/kbarber";
   const [isStandalone, setIsStandalone] = useState(false);
   const particlesInit = useCallback(async (engine: any) => {
@@ -334,7 +339,7 @@ export default function Home() {
                   center: {
                     x: 50,
                     y: 50,
-                    mode: percent,
+                    mode: SizeMode.percent,
                     radius: 0,
                   },
                   decay: 0,
