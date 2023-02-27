@@ -11,6 +11,12 @@ import {
 import { Container } from "react-dom";
 
 const inter = Inter({ subsets: ["latin"] });
+declare global {
+  interface Navigator {
+    // ⚠️ notice that "Window" is capitalized here
+    standalone: any;
+  }
+}
 
 export default function Home() {
   const deployed_url = "https://github.com/Leykwan132/kbarber";
