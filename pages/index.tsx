@@ -8,6 +8,7 @@ import {
   ArrowUpOnSquareIcon,
   ArrowLongDownIcon,
 } from "@heroicons/react/24/outline";
+import { motion } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
 declare global {
@@ -23,6 +24,7 @@ export default function Home() {
     precise = "precise",
     percent = "percent",
   }
+
   const deployed_url = "https://kbarber.vercel.app/";
   const [isStandalone, setIsStandalone] = useState(false);
   const particlesInit = useCallback(async (engine: any) => {
@@ -44,10 +46,6 @@ export default function Home() {
     }
   }, []);
 
-  const title = isStandalone ? "My PWA" : "Welcome to my PWA";
-  const icon = isStandalone
-    ? "/icons/icon-192x192.png"
-    : "/icons/icon-512x512.png";
   return (
     <>
       <Head>
@@ -691,62 +689,47 @@ export default function Home() {
               },
             }}
           />
-          <div className="hidden h-screen md:flex flex-col gap-10 justify-center items-center ">
-            <h1 className="text-white font-bold font-mono text-3xl">
+          <div className="flex-col items-center justify-center hidden h-screen gap-10 md:flex ">
+            <h1 className="font-mono text-3xl font-bold text-white">
               KwanBarber is on Mobile now!
             </h1>
             {/* QR Code */}
-            <div className="border border-white rounded-lg p-4">
+            <div className="p-4 border border-white rounded-lg">
               <QRCode value={deployed_url} size={200} />
             </div>
 
-            <h1
-              className="text-white font-mono font-thin text-sm
-            "
-            >
+            <h1 className="font-mono text-sm font-thin text-white ">
               Scan this QR Code with your Iphone to access the experience.
             </h1>
           </div>
-          <div className="relative px-6 flex h-screen md:hidden flex-col gap-10 justify-center items-center text-center">
-            <h1 className="text-white font-bold font-mono text-3xl">
+          <div className="relative flex flex-col items-center justify-center h-screen gap-10 px-6 text-center md:hidden">
+            <h1 className="font-mono text-3xl font-bold text-white">
               KwanBarber
             </h1>
-            <h1
-              className="text-white font-mono font-thin
-            "
-            >
+            <h1 className="font-mono font-thin text-white ">
               You are just two taps away.
             </h1>
 
-            <div className="flex flex-col gap-4 absolute bottom-28 items-center justify-center">
-              <div className="flex justify-center items-center">
-                <h1
-                  className="text-white font-mono font-bold text-sm
-                "
-                >
+            <div className="absolute flex flex-col items-center justify-center gap-4 bottom-28">
+              <div className="flex items-center justify-center">
+                <h1 className="font-mono text-sm font-bold text-white ">
                   Tap the
                 </h1>
 
                 <ArrowUpOnSquareIcon
-                  className="bg-slate-200 text-blue-500 mx-3 rounded-md p-1"
+                  className="p-1 mx-3 text-blue-500 rounded-md bg-slate-200"
                   width={32}
                   height={32}
                 />
-                <h1
-                  className="text-white font-mono font-bold text-sm
-                "
-                >
+                <h1 className="font-mono text-sm font-bold text-white ">
                   icon button below,
                 </h1>
               </div>
-              <div
-                className="text-white font-mono font-bold text-sm
-              "
-              >
+              <div className="font-mono text-sm font-bold text-white ">
                 {`then 'Add to home screen'`}
               </div>
               <ArrowLongDownIcon
-                className="animate-bounce mt-4 text-white"
+                className="mt-4 text-white animate-bounce"
                 width={28}
                 height={28}
               />

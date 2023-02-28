@@ -2,7 +2,7 @@
   "theme_color": "#FFFFFF",
   "background_color": "#FFFFFF",
   "display": "standalone",
-  "start_url": "/home",
+  "start_url": "/login",
   "name": "KwanBarber",
   "short_name": "KBarber",
   "description": "Kwan's Barber",
