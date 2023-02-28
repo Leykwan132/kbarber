@@ -280,6 +280,7 @@ const Login = (props: Props) => {
                 center: {
                   x: 50,
                   y: 50,
+                  //   @ts-ignore
                   mode: "percent",
                   radius: 0,
                 },
