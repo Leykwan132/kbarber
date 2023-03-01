@@ -12,21 +12,22 @@ const Home = (props: Props) => {
   const router = useRouter();
   const { data: session } = useSession();
   return (
-    <div className="relative z-20 flex flex-col justify-center py-4 bg-black px-7">
-      <Header />
-      <div className="flex items-center">
-        <div className="mt-4 font-mono text-white ">{`Hey ${session?.user?.name}! 👋🏻`}</div>
+    <div className="relative flex flex-col flex-1 h-screen py-4 bg-black px-7">
+      <div className="z-20">
+        <Header />
+        <div className="flex items-center">
+          <div className="mt-4 font-mono text-white ">{`Hey ${session?.user?.name}! 👋🏻`}</div>
+        </div>
+        <div className="flex flex-col gap-6 my-5 mb-6 ">
+          <Appointment />
+          <Card content="quote" />
+          <Card content="count" />
+        </div>
       </div>
-      <div className="flex flex-col gap-6 my-5 mb-6 ">
-        <Appointment />
-        <Card content="quote" />
-        <Card content="count" />
-      </div>
-
       <div className="fixed z-50 bottom-8 ">
         <Navbar />
       </div>
-      <div className="fixed z-40  left-3 w-[360px] h-[100px] bottom-6 rounded-2xl bg-black" />
+      <div className="fixed bottom-0 left-0 z-10 w-full h-screen bg-black rounded-2xl" />
     </div>
   );
 };

@@ -9,7 +9,7 @@ export default function App({
   return (
     <RecoilRoot>
       <SessionProvider session={session}>
-        <Component className="bg-black" {...pageProps} />
+        <Component {...pageProps} />
       </SessionProvider>
     </RecoilRoot>
   );
