@@ -13,7 +13,7 @@ const Home = (props: Props) => {
   const { data: session } = useSession();
   console.log(session);
   return (
-    <div className="relative flex flex-col justify-center py-10 px-7">
+    <div className="relative flex flex-col justify-center py-5 px-7">
       <Header />
       <div className="flex items-center">
         <div className="mt-4 font-mono ">{`Hey ${session?.user?.name}! 👋🏻`}</div>
