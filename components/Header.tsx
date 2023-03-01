@@ -15,7 +15,7 @@ const Header = (props: Props) => {
             className="object-cover w-full h-full"
           />
         </div>
-        <p className="font-mono text-xl">KwanBarber</p>
+        <p className="font-mono text-xl text-white">KwanBarber</p>
       </div>
       <a href="https://www.instagram.com/kwanbarber/" target="_blank">
         <AiOutlineInstagram className="text-3xl text-white" />
