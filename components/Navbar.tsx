@@ -10,7 +10,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <div className="grid grid-cols-4 gap-8">
+    <div className="grid grid-cols-4 gap-8 ">
       <div className="flex flex-col items-center justify-center gap-2">
         <div className="grid w-full p-4 border border-white rounded-xl h-14">
           <HomeModernIcon />
