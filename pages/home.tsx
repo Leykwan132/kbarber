@@ -23,7 +23,7 @@ const Home = (props: Props) => {
         <Card content="quote" />
         <Card content="count" />
       </div>
-      <div className="fixed bottom-12">
+      <div className="fixed bottom-8">
         <Navbar />
       </div>
     </div>
