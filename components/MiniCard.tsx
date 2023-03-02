@@ -26,6 +26,7 @@ const MiniCard = ({ type, data }: Props) => {
         <div className="relative overflow-hidden bg-white border-gray-300 rounded-full w-14 h-14 ">
           <Image
             className="object-contain"
+            // @ts-ignore
             src={data?.after_front}
             fill
             alt="picture"
