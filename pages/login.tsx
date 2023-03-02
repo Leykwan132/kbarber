@@ -36,7 +36,7 @@ const Login = (props: Props) => {
 
   return (
     <>
-      <div className="relative flex flex-col items-center justify-center h-screen gap-3 text-white ">
+      <div className="relative z-50 flex flex-col items-center justify-center h-screen gap-3 text-white ">
         <Particles
           id="tsparticles"
           init={particlesInit}
