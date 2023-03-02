@@ -8,4 +8,7 @@ const withPWA = require("next-pwa")({
 module.exports = withPWA({
   // next.js config
   reactStrictMode: true,
+  images: {
+    domains: ["i.pinimg.com", "images.squarespace-cdn.com", "www.beyoung.in"],
+  },
 });
