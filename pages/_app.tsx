@@ -17,6 +17,7 @@ export default function App({
           <div className="fixed z-50 flex justify-center w-full bottom-8">
             <Navbar />
           </div>
+          <div className="fixed bottom-0 z-40 flex justify-center w-full h-[84px] p-4 bg-black" />
         </div>
       </SessionProvider>
     </RecoilRoot>
