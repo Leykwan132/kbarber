@@ -28,8 +28,10 @@ const Navbar = (props: Props) => {
       >
         <div
           className={`${
-            show === "home" ? "bg-white text-black" : "bg-black text-white"
-          } grid w-full p-4  border border-white rounded-xl h-14 transition duration-300 ease-in-out`}
+            show === "home"
+              ? "bg-white text-black border-black "
+              : "bg-black border border-white  text-white"
+          } grid w-full p-4  rounded-xl h-14 transition duration-300 ease-in-out`}
         >
           <HomeModernIcon />
         </div>
@@ -41,7 +43,9 @@ const Navbar = (props: Props) => {
       >
         <div
           className={`${
-            show === "bookings" ? "bg-white text-black" : "bg-black text-white"
+            show === "bookings"
+              ? "bg-white text-black border-black "
+              : "bg-black border border-white  text-white"
           } grid w-full p-4  border border-white rounded-xl h-14 transition duration-300 ease-in-out`}
         >
           <ScissorsIcon />
@@ -55,7 +59,9 @@ const Navbar = (props: Props) => {
       >
         <div
           className={`${
-            show === "history" ? "bg-white text-black" : "bg-black text-white"
+            show === "history"
+              ? "bg-white text-black border-black "
+              : "bg-black border border-white  text-white"
           } grid w-full p-4  border border-white rounded-xl h-14 transition duration-300 ease-in-out`}
         >
           <ClockIcon />
@@ -69,7 +75,9 @@ const Navbar = (props: Props) => {
       >
         <div
           className={`${
-            show === "gallery" ? "bg-white text-black" : "bg-black text-white"
+            show === "gallery"
+              ? "bg-white text-black border-black "
+              : "bg-black border border-white  text-white"
           } grid w-full p-4  border border-white rounded-xl h-14 transition duration-300 ease-in-out`}
         >
           <PhotoIcon />

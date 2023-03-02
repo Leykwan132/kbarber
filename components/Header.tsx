@@ -6,7 +6,7 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between mx-6 mt-4">
       <div className="flex items-center gap-1">
         <div className="w-8 h-8 overflow-hidden rounded-full">
           <Image
