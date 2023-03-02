@@ -92,7 +92,7 @@ const sampleData: MiniCardProps[] = [
 const gallery = (props: Props) => {
   return (
     <div className="relative flex flex-col justify-center bg-black px-7 ">
-      <div className="z-20 overflow-y-scroll max-h-[660px] scrollbar-hide">
+      <div className="z-20 overflow-y-scroll max-h-[630px] scrollbar-hide">
         <div className="mt-4 font-mono text-white">Gallery</div>{" "}
         <div className="flex flex-col gap-4 mt-2">
           {sampleData.map((data, index) => (
